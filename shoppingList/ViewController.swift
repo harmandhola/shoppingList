@@ -1,6 +1,7 @@
 //
 //  File name:ViewController.swift
 //  Author: Harmandeep Kaur
+//  Student Id: 301092579
 //  Date: 16/09/2019
 //  project name:shoppingList
 //
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label4: UILabel!
     @IBOutlet weak var label5: UILabel!
     
+    //functions for stepper control
     @IBAction func stepperAction(_ sender: Any) {
         
         label1.text = String(stepper.value)
@@ -45,7 +47,21 @@ class ViewController: UIViewController {
         label5.text = String(stepper5.value)
     }
     
-    
+    //function for cancel button
+    @IBAction func cancel(_ sender: Any) {
+         label1.text = "0"
+         label2.text = "0"
+         label3.text = "0"
+         label4.text = "0"
+         label5.text = "0"
+         stepper.value = 0
+         stepper2.value = 0
+         stepper3.value = 0
+         stepper4.value = 0
+         stepper5.value = 0
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
