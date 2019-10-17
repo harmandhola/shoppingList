@@ -13,13 +13,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //to connect textfields
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+    @IBOutlet weak var text3: UITextField!
+    @IBOutlet weak var text4: UITextField!
+    @IBOutlet weak var text5: UITextField!
     
+    //to connect stepper controls
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var stepper2: UIStepper!
     @IBOutlet weak var stepper3: UIStepper!
     @IBOutlet weak var stepper4: UIStepper!
     @IBOutlet weak var stepper5: UIStepper!
     
+    //to connect labels
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -59,7 +67,11 @@ class ViewController: UIViewController {
          stepper3.value = 0
          stepper4.value = 0
          stepper5.value = 0
-        
+        text1.text = "0"
+        text2.text = "0"
+        text3.text = "0"
+        text4.text = "0"
+        text5.text = "0"
         
     }
     
